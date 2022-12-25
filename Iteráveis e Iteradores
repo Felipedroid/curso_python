@@ -1,0 +1,9 @@
+iterable = [
+    'a', 1, 1.1, True, [0, 1, 2], (1, 2),
+    {0, 1}, {'nome': 'Luiz'},
+]
+
+iterator = iterable.__iter__()
+#iterator = iter(iterable)
+print(iterator.__next__())
+print(next(iterator))
