@@ -1,0 +1,9 @@
+import sys
+
+lista = [n for n in range(10000)]
+generator = (x for x in range(10000))
+
+print(sys.getsizeof(lista))
+print(sys.getsizeof(generator))
+
+print(next(generator))
