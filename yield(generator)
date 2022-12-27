@@ -1,0 +1,12 @@
+def generator(n=0, maximun=100):
+    while True:
+        yield n #Pausa a função (generator)
+        n += 1
+        if n > maximun:
+            return
+
+gen = generator(maximun=100)
+print(next(gen))
+print(next(gen))
+print(gen.__next__())
+print(next(gen))
