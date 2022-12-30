@@ -1,0 +1,6 @@
+nomes = ['maria', 'jose', 'joao', 'antonio']
+
+lista_enumerada = enumerate(nomes)
+
+for index, item in lista_enumerada:
+    print(index, item)
