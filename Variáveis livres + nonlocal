@@ -1,0 +1,14 @@
+def concatenar(string_incial):
+    valor_final = string_incial
+
+    def interna(concatenar=''):
+        nonlocal valor_final
+        valor_final += concatenar
+        return valor_final
+    return interna
+
+c = concatenar('a')
+c('b')
+c('c')
+c('d')
+print(c())
