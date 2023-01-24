@@ -1,0 +1,13 @@
+def decoradora(funcao):
+    def interna(*args):
+        res = funcao(*args)
+        return res + 2
+
+    return interna
+
+@decoradora
+def somar(x, y):
+    return x + y
+
+somar_mais_dois = somar(2, 2)
+print(somar_mais_dois)
