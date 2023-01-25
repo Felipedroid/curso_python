@@ -1,0 +1,21 @@
+lista1 = [1, 2, 3, 4, 5, 6, 7]
+lista2 = [1, 2, 3, 4]
+
+lista_somada = [x + y for x, y in zip(lista1, lista2)]
+print(lista_somada)
+
+# lista_somada = []
+# for number in zip(lista1, lista2):
+#     lista_somada.append(sum(number))
+#
+# print(lista_somada)
+
+# for i, _ in enumerate(lista2):
+#     lista_somada.append(lista1[i] + lista2[i])
+# print(lista_somada)
+
+# def soma_de_listas(l1, l2):
+#     range_minimo = min(len(l1), len(l2))
+#     return [(l1[i] + l2[i]) for i in range(range_minimo)]
+#
+# print(soma_de_listas(lista1, lista2))
