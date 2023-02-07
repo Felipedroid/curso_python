@@ -1,0 +1,15 @@
+# TODO: define a function that takes variable arguments
+def addition(*args):
+    result = 0
+    for arg in args:
+        result += arg
+    return result
+
+
+def main():
+    # TODO: pass different arguments
+    print(addition(2, 4, 6, 8, 10))
+
+    # TODO: pass an existing list
+    lista = [2, 4, 6, 8, 11]
+    print(addition(*lista))
