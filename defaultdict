@@ -1,0 +1,11 @@
+from collections import defaultdict
+
+text = "A casa é azul. A casa é grande."
+words = text.split()
+
+word_counts = defaultdict(int)
+for word in words:
+    word_counts[word] += 1
+
+print(dict(word_counts))
+# Output: defaultdict(<class 'int'>, {'A': 2, 'casa': 2, 'é': 2, 'azul.': 1, 'grande.': 1})
