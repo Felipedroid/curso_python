@@ -1,0 +1,30 @@
+from enum import Enum, unique, auto
+
+#@unique caso queira valores unicos
+class Fruits(Enum):
+    Apple = 1
+    Banana = 2
+    Laranja = 3
+    Tomate = 4
+    Abacate = auto()
+
+def main():
+    pass
+    # TODO: enums have human-readable values and types
+    print(Fruits.Apple)
+    print(type(Fruits.Apple))
+    print(repr(Fruits.Apple))
+    # TODO: enums have name and value properties
+    #print(Fruits.Apple.name, Fruits.Apple.value)
+
+    # TODO: print the auto-generated value
+    print(Fruits.Abacate.value)
+
+    # TODO: enums are hashable - can be used as keys
+    MyFruits = {}
+    MyFruits[Fruits.Banana] = "Fruta do mercado"
+    print(MyFruits[Fruits.Banana])
+
+
+if __name__ == "__main__":
+    main()
