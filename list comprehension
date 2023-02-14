@@ -1,0 +1,19 @@
+def main():
+    # define two lists of numbers
+    evens = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+    odds = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+
+    # TODO: Perform a mapping and filter function on a list
+    powlist = list(map(lambda x: x**2, filter(lambda c: c>4 and c<16, evens)))
+    # print(powlist)
+
+    # TODO: Derive a new list of numbers frm a given list
+    poteven = [num**2 for num in evens]
+    print(poteven)
+    # TODO: Limit the items operated on with a predicate condition
+    potodd = [num**2 for num in odds if num>3 and num<17]
+    print(potodd)
+
+
+if __name__ == "__main__":
+    main()
